@@ -16,6 +16,7 @@
 			membershipExceptions = (
 				Networking/Endpoint.swift,
 				Networking/NetworkService.swift,
+				StorageService.swift,
 			);
 			target = 8A71D57B2EAD59FF00520520 /* Utils */;
 		};

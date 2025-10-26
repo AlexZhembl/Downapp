@@ -62,6 +62,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		8A71D6292EAE4A0900520520 /* DownappTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DownappTests;
+			sourceTree = "<group>";
+		};
 		8AB40D682EAA416E00637636 /* Downapp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Downapp;
@@ -102,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				8AB40D682EAA416E00637636 /* Downapp */,
+				8A71D6292EAE4A0900520520 /* DownappTests */,
 				8AB40DFE2EAB8DF500637636 /* Frameworks */,
 				8AB40D672EAA416E00637636 /* Products */,
 			);
@@ -167,6 +173,9 @@
 			);
 			dependencies = (
 				8AB40D752EAA416F00637636 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8A71D6292EAE4A0900520520 /* DownappTests */,
 			);
 			name = DownappTests;
 			packageProductDependencies = (
