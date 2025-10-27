@@ -61,6 +61,7 @@ This ensures full control over flow and clear dependency boundaries — no globa
 - 🖼️ `ProfilesService` prefetches profile images for smoother scrolling with `AsyncImage`.  
 - 👀 All views include **Xcode Previews** for instant visual feedback.  
 - 🧪 `ProfilesDecisionStorageTests` covers the logic of decision persistence.  
+- 📲 Used `iOS 26` as minimum target. Tested at the smallest screen (`iPhone SE`) 👍
 - 🐛 Fixes the **0-offset bug** found in the original app (see video reference below). 
  [The video](https://github.com/AlexZhembl/Downapp/blob/main/original_app_0_offset_bug.mp4?raw=true)
 
