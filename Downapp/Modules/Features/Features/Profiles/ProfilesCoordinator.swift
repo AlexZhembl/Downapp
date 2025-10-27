@@ -10,12 +10,15 @@ import Utils
 
 public protocol ProfilesDependencies {
     var networkService: NetworkService { get }
+    var storageService: StorageService { get }
 }
 
 public final class ProfilesCoordinator {
     @MainActor
     public static func makeProfilesView(deps: ProfilesDependencies) -> some View {
-        // TODO
-        Text("TODO")
+        let fetcher = ProfilesFetcherImpl(network: deps.networkService)
+        let storage = ProfilesDecisionStorageImpl(store: deps.storageService)
+        let viewModel = ProfilesViewModel(fetcher: fetcher, decisionStorage: storage)
+        return ProfilesView(viewModel: viewModel)
     }
 }

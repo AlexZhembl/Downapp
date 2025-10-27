@@ -12,9 +12,11 @@ import Utils
 
 final class AppDependencies {
     let networkService: NetworkService
+    let storageService: StorageService
 
     init() {
         self.networkService = NetworkServiceImpl()
+        self.storageService = StorageServiceImpl(defaults: .standard)
     }
 }
 
